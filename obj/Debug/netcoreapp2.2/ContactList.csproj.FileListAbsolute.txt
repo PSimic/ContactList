@@ -25,3 +25,6 @@ d:\Repos\ContactList\obj\Debug\netcoreapp2.2\ContactList.dll
 d:\Repos\ContactList\obj\Debug\netcoreapp2.2\ContactList.pdb
 D:\Repos\ContactList\obj\Debug\netcoreapp2.2\ContactList.csproj.CopyComplete
 d:\Repos\ContactList\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+d:\Repos\ContactList\obj\Debug\netcoreapp2.2\Razor\Views\Users\Index.g.cshtml.cs
+d:\Repos\ContactList\obj\Debug\netcoreapp2.2\Razor\Views\Users\Create.g.cshtml.cs
+d:\Repos\ContactList\obj\Debug\netcoreapp2.2\Razor\Views\Users\Update.g.cshtml.cs
