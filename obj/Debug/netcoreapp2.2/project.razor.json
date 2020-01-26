@@ -2966,6 +2966,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Repos\\ContactList\\Views\\Roles\\Index.cshtml",
+      "TargetPath": "Views\\Roles\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Repos\\ContactList\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -2986,6 +2991,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Repos\\ContactList\\Views\\Roles\\Create.cshtml",
+      "TargetPath": "Views\\Roles\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Repos\\ContactList\\Views\\Account\\Login.cshtml",
       "TargetPath": "Views\\Account\\Login.cshtml",
       "FileKind": "mvc"
@@ -2993,6 +3003,11 @@
     {
       "FilePath": "d:\\Repos\\ContactList\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Repos\\ContactList\\Views\\Roles\\Update.cshtml",
+      "TargetPath": "Views\\Roles\\Update.cshtml",
       "FileKind": "mvc"
     },
     {

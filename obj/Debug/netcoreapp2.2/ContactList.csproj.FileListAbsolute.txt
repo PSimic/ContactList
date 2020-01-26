@@ -28,3 +28,6 @@ d:\Repos\ContactList\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.
 d:\Repos\ContactList\obj\Debug\netcoreapp2.2\Razor\Views\Users\Index.g.cshtml.cs
 d:\Repos\ContactList\obj\Debug\netcoreapp2.2\Razor\Views\Users\Create.g.cshtml.cs
 d:\Repos\ContactList\obj\Debug\netcoreapp2.2\Razor\Views\Users\Update.g.cshtml.cs
+d:\Repos\ContactList\obj\Debug\netcoreapp2.2\Razor\Views\Roles\Index.g.cshtml.cs
+d:\Repos\ContactList\obj\Debug\netcoreapp2.2\Razor\Views\Roles\Create.g.cshtml.cs
+d:\Repos\ContactList\obj\Debug\netcoreapp2.2\Razor\Views\Roles\Update.g.cshtml.cs
