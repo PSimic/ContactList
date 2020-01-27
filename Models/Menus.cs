@@ -3,19 +3,19 @@ using System.Collections.Generic;
 
 namespace ContactList.Models
 {
-    public partial class Roles
+    public partial class Menus
     {
-        public Roles()
+        public Menus()
         {
             LinkRolesMenus = new HashSet<LinkRolesMenus>();
-            Users = new HashSet<Users>();
         }
 
         public int Pkey { get; set; }
-        public string Type { get; set; }
-        public string Description { get; set; }
+        public string Name { get; set; }
+        public string Icon { get; set; }
+        public string Url { get; set; }
+        public int ParentPkey { get; set; }
 
         public virtual ICollection<LinkRolesMenus> LinkRolesMenus { get; set; }
-        public virtual ICollection<Users> Users { get; set; }
     }
 }

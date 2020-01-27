@@ -18,6 +18,8 @@ namespace ContactList.Models
         public virtual DbSet<BlwlContactList> BlwlContactList { get; set; }
         public virtual DbSet<BlwlContactListGroup> BlwlContactListGroup { get; set; }
         public virtual DbSet<BlwlListType> BlwlListType { get; set; }
+        public virtual DbSet<LinkRolesMenus> LinkRolesMenus { get; set; }
+        public virtual DbSet<Menus> Menus { get; set; }
         public virtual DbSet<Roles> Roles { get; set; }
         public virtual DbSet<Users> Users { get; set; }
 
@@ -109,6 +111,57 @@ namespace ContactList.Models
                     .HasMaxLength(50);
             });
 
+            modelBuilder.Entity<LinkRolesMenus>(entity =>
+            {
+                entity.HasKey(e => e.Pkey);
+
+                entity.ToTable("link_roles_menus");
+
+                entity.Property(e => e.Pkey).HasColumnName("pkey");
+
+                entity.Property(e => e.MenusPkey).HasColumnName("menus_pkey");
+
+                entity.Property(e => e.RolesPkey).HasColumnName("roles_pkey");
+
+                entity.HasOne(d => d.MenusPkeyNavigation)
+                    .WithMany(p => p.LinkRolesMenus)
+                    .HasForeignKey(d => d.MenusPkey)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_link_roles_menus-menus");
+
+                entity.HasOne(d => d.RolesPkeyNavigation)
+                    .WithMany(p => p.LinkRolesMenus)
+                    .HasForeignKey(d => d.RolesPkey)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_link_roles_menus-roles");
+            });
+
+            modelBuilder.Entity<Menus>(entity =>
+            {
+                entity.HasKey(e => e.Pkey);
+
+                entity.ToTable("menus");
+
+                entity.Property(e => e.Pkey).HasColumnName("pkey");
+
+                entity.Property(e => e.Icon)
+                    .IsRequired()
+                    .HasColumnName("icon")
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasColumnName("name")
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.ParentPkey).HasColumnName("parent_pkey");
+
+                entity.Property(e => e.Url)
+                    .IsRequired()
+                    .HasColumnName("url")
+                    .HasMaxLength(255);
+            });
+
             modelBuilder.Entity<Roles>(entity =>
             {
                 entity.HasKey(e => e.Pkey);
@@ -116,6 +169,10 @@ namespace ContactList.Models
                 entity.ToTable("roles");
 
                 entity.Property(e => e.Pkey).HasColumnName("pkey");
+
+                entity.Property(e => e.Description)
+                    .HasColumnName("description")
+                    .HasMaxLength(255);
 
                 entity.Property(e => e.Type)
                     .IsRequired()
