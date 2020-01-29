@@ -6,7 +6,6 @@ d:\Repos\ContactList\bin\Debug\netcoreapp2.2\ContactList.pdb
 D:\Repos\ContactList\bin\Debug\netcoreapp2.2\ContactList.Views.dll
 d:\Repos\ContactList\bin\Debug\netcoreapp2.2\ContactList.Views.pdb
 d:\Repos\ContactList\obj\Debug\netcoreapp2.2\ContactList.csprojAssemblyReference.cache
-d:\Repos\ContactList\obj\Debug\netcoreapp2.2\ContactList.csproj.CoreCompileInputs.cache
 d:\Repos\ContactList\obj\Debug\netcoreapp2.2\ContactList.RazorAssemblyInfo.cache
 d:\Repos\ContactList\obj\Debug\netcoreapp2.2\ContactList.RazorAssemblyInfo.cs
 d:\Repos\ContactList\obj\Debug\netcoreapp2.2\ContactList.AssemblyInfoInputs.cache
@@ -31,3 +30,4 @@ d:\Repos\ContactList\obj\Debug\netcoreapp2.2\Razor\Views\Users\Update.g.cshtml.c
 d:\Repos\ContactList\obj\Debug\netcoreapp2.2\Razor\Views\Roles\Index.g.cshtml.cs
 d:\Repos\ContactList\obj\Debug\netcoreapp2.2\Razor\Views\Roles\Create.g.cshtml.cs
 d:\Repos\ContactList\obj\Debug\netcoreapp2.2\Razor\Views\Roles\Update.g.cshtml.cs
+d:\Repos\ContactList\obj\Debug\netcoreapp2.2\ContactList.csproj.CoreCompileInputs.cache

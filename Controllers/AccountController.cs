@@ -35,7 +35,7 @@ namespace ContactList
                     DataSet ds = new DataSet();
                     ds = ToDataSet(menus);
                     DataTable table = ds.Tables[0];
-                    DataRow[] parentMenus = table.Select("ParentId = 0");
+                    DataRow[] parentMenus = table.Select("parent_pkey = 0");
                     var sb = new StringBuilder();
                     string menuString = GenerateUL(parentMenus, table, sb);
                     HttpContext.Session.SetString("menuString", menuString);
